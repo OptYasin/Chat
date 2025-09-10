@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Giriş Yap</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>🔑 Giriş Yap</h2>
+    <form method="POST">
+      <input type="text" name="username" placeholder="Kullanıcı Adı" required>
+      <input type="password" name="password" placeholder="Şifre" required>
+      
+      <label style="color:white; margin-top:10px; display:block;">
+        <input type="checkbox" name="remember"> Beni hatırla
+      </label>
+      
+      <button type="submit">Giriş Yap</button>
+    </form>
+
+    <p>Hesabınız yok mu? <a href="{{ url_for('register') }}">Kayıt Ol</a></p>
+    <a href="{{ url_for('index') }}">⬅ Ana Sayfa</a>
+  </div>
+</body>
+</html>

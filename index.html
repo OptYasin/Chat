@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ana Sayfa</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>💬 Chat'a Hoşgeldiniz</h1>
+    <p>Lütfen giriş yapın veya kayıt olun.</p>
+
+    <a href="{{ url_for('login') }}"><button>🔑 Giriş Yap</button></a>
+    <a href="{{ url_for('register') }}"><button>📝 Kayıt Ol</button></a>
+  </div>
+</body>
+</html>
